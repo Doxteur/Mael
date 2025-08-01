@@ -19,7 +19,7 @@ Ce projet utilise Docker Compose avec Nginx pour servir le site web TigerFit.
 
 2. **Démarrer le serveur**
    ```bash
-   docker-compose up -d
+   docker-compose up -d --build
    ```
 
 3. **Accéder au site**
@@ -39,6 +39,7 @@ Ce projet utilise Docker Compose avec Nginx pour servir le site web TigerFit.
 .
 ├── page.html          # Votre fichier HTML principal
 ├── docker-compose.yml # Configuration Docker Compose
+├── Dockerfile         # Image Docker personnalisée
 ├── nginx.conf         # Configuration Nginx
 └── README.md          # Ce fichier
 ```

@@ -2,13 +2,10 @@ version: '3.8'
 
 services:
   nginx:
-    image: nginx:alpine
+    build: .
     container_name: tigerfit-website
     ports:
       - "7774:80"
-    volumes:
-      - ./page.html:/usr/share/nginx/html/index.html
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
     restart: unless-stopped
     networks:
       - tigerfit-network
