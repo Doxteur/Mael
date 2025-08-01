@@ -5,7 +5,7 @@ services:
     image: nginx:alpine
     container_name: tigerfit-website
     ports:
-      - "80:80"
+      - "7774:80"
     volumes:
       - ./page.html:/usr/share/nginx/html/index.html
       - ./nginx.conf:/etc/nginx/nginx.conf
